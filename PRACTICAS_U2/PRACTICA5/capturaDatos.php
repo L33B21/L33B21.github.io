@@ -1,0 +1,11 @@
+<?php
+function getDescripcion() {
+  return filter_input(INPUT_POST, 'txtDescripcion', FILTER_SANITIZE_FULL_SPECIAL_CHARS) ?? '';
+}
+function getStock() {
+  return filter_input(INPUT_POST, 'txtStock', FILTER_SANITIZE_NUMBER_INT) ?? '';
+}
+function getPrecio() {
+  return filter_input(INPUT_POST, 'txtPrecio', FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION) ?? '';
+}
+?>

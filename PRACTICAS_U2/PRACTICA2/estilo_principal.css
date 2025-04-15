@@ -1,0 +1,104 @@
+/* Fondo general */
+body {
+    background: linear-gradient(to bottom, #002266, #000033);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#centrado {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #00ffcc;
+}
+
+/* Bienvenida y logout */
+#centrado a {
+    color: #ff6666;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+#centrado a:hover {
+    color: #ff0000;
+    text-shadow: 0 0 5px #ff0000;
+}
+
+/* Sección principal */
+section {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Tabla de opciones */
+table {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    box-shadow: 0 0 15px #00ffcc;
+    padding: 20px;
+    border-collapse: collapse;
+    animation: floatUp 1s ease;
+}
+
+/* Celdas */
+td {
+    padding: 12px 20px;
+    font-size: 18px;
+    color: #ffffff;
+    transition: background-color 0.3s;
+}
+
+/* Enlaces */
+a {
+    text-decoration: none;
+    color: #00ffcc;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #00ff66;
+    text-shadow: 0 0 5px #00ffcc;
+}
+
+/* Iconos */
+table img {
+    border-radius: 12px;
+    border: 2px solid #00ffcc;
+    background-color: white;
+    padding: 5px;
+    transition: transform 0.3s ease;
+}
+
+table img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #00ffcc;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes floatUp {
+    from { transform: translateY(40px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
